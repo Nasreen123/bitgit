@@ -3,8 +3,7 @@ import java.io.File
 class FileInterface {
 
     fun makeDirectory(command: WriteDirectoryCommand) {
-        //File(command.path).mkdirs()
-        val file = java.io.File(command.path)
+        val file = File(command.path)
         if (!file.exists()) {
             file.mkdir()
         }
