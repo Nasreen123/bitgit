@@ -1,7 +1,7 @@
 
 class Controller(private val fileInterface: FileInterface) {
 
-    private val index: Index = Index(fileInterface)
+    private val index: Index = Index(fileInterface) //does it make sense to init the index before the index file exists?
     private val objectsDatabase: ObjectsDatabase = ObjectsDatabase(fileInterface)
     private val workingDirectory: WorkingDirectory = WorkingDirectory(fileInterface)
 

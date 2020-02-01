@@ -18,6 +18,9 @@ class FileInterface {
     }
 
     fun readFile(path: String): String {
+        if (!File(path).exists()) {
+            return ""
+        }
         return File(path).readText()
     }
 
