@@ -88,7 +88,7 @@ class TestController {
 
     @Ignore
     @Test
-    fun test() {
+    fun run() {
         val controller = Controller(FileInterface())
         controller.callCommand(Controller.Command.INIT, "")
         controller.callCommand(Controller.Command.ADD, "hello")
