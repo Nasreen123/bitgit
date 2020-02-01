@@ -4,7 +4,7 @@ A bit of git: a very small subset of git, written in Kotlin
 
 Commands implemented: `INIT`, `ADD`, `COMMIT`
 
-You can run it by compiling a jar first*, and then running the following commands:
+You can run it by compiling a jar first, and then running the following commands:
 
 ```
 java -jar bitgit.jar init
@@ -12,10 +12,6 @@ touch hello
 java -jar bitgit.jar add hello
 java -jar bitgit.jar commit "my commit message!"
 ```
-
-java (?) BitGit init
-add hello
-commit "this is a commit message"
 
 And end up with a directory called `bitgit` (our .git directory) with contents like this:
 ```
